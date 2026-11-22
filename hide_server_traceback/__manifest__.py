@@ -22,7 +22,7 @@ Key Features:
     "support": "[dpakverma789@gmail.com](mailto:dpakverma789@gmail.com)",
     "license": "LGPL-3",
     "category": "Administration",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
 
     "depends": [
         "web",

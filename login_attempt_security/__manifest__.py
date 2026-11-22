@@ -14,7 +14,7 @@ Features:
 
 Ideal for improving system security against brute-force attacks.
     """,
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Security",
     "author": "Deepak Verma",
     "company": "DeeCoders",
@@ -22,7 +22,7 @@ Ideal for improving system security against brute-force attacks.
     "website": "https://www.linkedin.com/in/deepak-verma-07144012a",
     "support": "dpakverma789@gmail.com",
     "license": "LGPL-3",
-    "depends": ["base", "web"],
+    "depends": ["base", "web", "base_setup"],
     "data": [
         "security/ir.model.access.csv",
         "views/res_config_settings_view.xml",

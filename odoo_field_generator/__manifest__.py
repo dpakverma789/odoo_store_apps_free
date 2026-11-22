@@ -1,6 +1,6 @@
 {
     "name": "Odoo Field Syntax Generator",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "summary": "Generate Odoo Python and XML field syntax automatically",
 
     "description": """
