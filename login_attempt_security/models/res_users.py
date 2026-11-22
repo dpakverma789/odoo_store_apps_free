@@ -39,11 +39,12 @@ class ResUsers(models.Model):
 
         except AccessDenied:
 
+            attempts = self.login_attempt_count + 1
             self.sudo().write({
-                "login_attempt_count": self.login_attempt_count + 1
+                "login_attempt_count": attempts
             })
 
-            if self.login_attempt_count + 1 >= max_attempts:
+            if attempts >= max_attempts:
                 self.sudo().write({
                     "is_login_blocked": True,
                     "login_blocked_until": fields.Datetime.now()

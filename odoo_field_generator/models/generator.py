@@ -42,7 +42,7 @@ class OdooFieldGenerator(models.Model):
         python_formats = {
             "mo": f"{base}(comodel_name='your.model_name', string='{label}')",
             "om": f"{base}(comodel_name='your.model_name', inverse_name='', string='{label}')",
-            "mm": f"{base}(comodel_name='your.model_name', 'table_rel', 'col1_id', 'col2_id', string='{label}')",
+            "mm": f"{base}(comodel_name='your.model_name', relation='table_rel', column1='col1_id', column2='col2_id', string='{label}')",
             "s": f"{base}([('option_1','Option 1'),('option_2','Option 2')], string='{label}', default='option_1')"
         }
 
